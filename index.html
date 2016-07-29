@@ -21,14 +21,15 @@
         console.log('Family Name: ' + profile.getFamilyName());
         console.log("Image URL: " + profile.getImageUrl());
         console.log("Email: " + profile.getEmail());
+        document.getElementById("change").innerHTML=profile.getEmail();
 
         // The ID token you need to pass to your backend:
         var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
       };
 
-    var profile=googleUser.getBasicProfile();
-    document.getElementById("change").innerHTML=profile.getEmail();
+    //var profile=googleUser.getBasicProfile();
+    //document.getElementById("change").innerHTML=profile.getEmail();
     </script>
     <p id="change"> hey </p>
   </body>
