@@ -27,10 +27,7 @@
         console.log("ID Token: " + id_token);
       };
 
-      GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
-      GoogleSignInAccount acct = result.getSignInAccount();
-    String personName = acct.getDisplayName();
-    String personEmail = acct.getEmail();
+    
     document.getElementById("change").innerHTML=profile.getEmail();
     </script>
     <p id="change"> hey </p>
