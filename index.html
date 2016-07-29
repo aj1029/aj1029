@@ -31,7 +31,7 @@
       GoogleSignInAccount acct = result.getSignInAccount();
     String personName = acct.getDisplayName();
     String personEmail = acct.getEmail();
-    document.getElementById("change").innerHTML=personName
+    document.getElementById("change").innerHTML=profile.getEmail();
     </script>
     <p id="change"> hey </p>
   </body>
