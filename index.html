@@ -27,7 +27,7 @@
         console.log("ID Token: " + id_token);
       };
 
-    
+    var profile=googleUser.getBasicProfile();
     document.getElementById("change").innerHTML=profile.getEmail();
     </script>
     <p id="change"> hey </p>
